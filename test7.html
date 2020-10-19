@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<title>{{ Page.Title }}</title>
+
+	<!-- MORE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<!--PURE CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+	<!--RESET-->
+	<link rel="stylesheet" type="text/css" href="css/main/reset.scss">
+	<!-- VIDEO-JS FROM CAMTV (only for this example page) -->
+	<link rel="stylesheet" type="text/css" href="https://cdnstatic.cam.tv/appchk/front/it/13.4ca7964178c92beb4dc8.min.css">
+	<!-- HEADER AND CARDS -->
+	<link rel="stylesheet" type="text/css" href="https://camtv.github.io/pagebuilder/develop/cards.css?cff281c4f2d6cd13f2ef">
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.scss"> -->
+	<!-- ALL ITEMS -->
+	<link rel="stylesheet" type="text/css" href="css/main/extern-channel.scss">
+	<link rel="stylesheet" type="text/css" href="css/main/ctv-item-all.scss">
+	<link rel="stylesheet" type="text/css" href="css/main/supporters-widget.scss">
+	<!-- THEMES -->
+	<link rel="stylesheet" type="text/css" href="css/themes/ctv-cards-theme-default.scss">
+	<!-- MODIFIERS -->
+	<link rel="stylesheet" type="text/css" href="css/modifiers.scss">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.4.3/webcomponents-bundle.js"></script>
+	<script src="https://camtv.github.io/pagebuilder/develop/cards.js"></script>
+	<script src="js/ctv-comments.js"></script> 
+	
+</head>
+
+<body style="background-color: #f6f6f6;" class="layout-3-column">
+
+
+	<include src="common/header.html"></include>
+
+
+	<ctv-card-header
+		cover_url="{{ Channel.CoverURL }}"
+		thumbnail_url="{{ Channel.ThumbnailURL }}"
+		name="{{ Channel.Name }}"
+		uriname="{{ Channel.URIName }}"
+		founder_type="TOP_PRESIDENT"
+		certified="true"
+		fans_num="{{ Channel.NFan }}"
+		likes_num="{{ Channel.NTotalLikes }}"
+		stars="{{ Channel.Stars }}"
+		share_url="{{ Channel.ShareURL }}"
+		menu='[{"label":"Info", "url":"https://www.cam.tv/pages/info"}, {"label":"Blog", "url":"https://www.cam.tv/pages/blog"}, {"label":"Video", "url":"https://www.cam.tv/pages/video"}, {"label":"ForYou", "active":true, "url":"https://www.cam.tv/pages/foryou"}]'
+	>
+	</ctv-card-header>
+
+	<main class="limit-width-content">
+
+		<include src="common/menu.html"></include>
+		<!-- CARDS -->
+		<div class="main-content-area">
+
+			<!-- SOSTENITORI -->
+			<div class="supporters-mini-widget z-depth-1">
+				<div class="supporters-header">
+					<h5 class="truncate">Top Fan di Antonio Militello Albanese</h5>
+					<!-- Tip: Espandi applica al body la classe .supporters-widget-opened -->
+					<button class="plain-link-secondary Expand">Espandi</button>
+				</div>
+			
+				<div class="supporters-filled-area">
+
+					<!-- Tip: La lista (settimana, mese o totale) può avere fino ad un massimo di 25 utenti -->
+					<ul class="supporters-list SupportersList">
+
+						<!-- Tip: L'url di <a> è composto da "URIname" e "shun" -->
+						<li class="first">
+							<ctv-card-img class="thumbnail" url="https://www.cam.tv/lucaambrosini?shun=mariorossi" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							<svg viewBox="0 0 24 24">
+								<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+							</svg>
+						</li>
+						<!-- Tip: L'url di <a> è composto da "URIname" e "shun" -->
+						<li>
+							<ctv-card-img class="thumbnail" url="https://www.cam.tv/lucaambrosini?shun=mariorossi" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+						</li>
+						<!-- Tip: L'url di <a> è composto da "URIname" e "shun" -->
+						<li>
+							<ctv-card-img class="thumbnail" url="https://www.cam.tv/lucaambrosini?shun=mariorossi" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+						</li>
+						<!-- Tip: L'url di <a> è composto da "URIname" e "shun" -->
+						<li>
+							<ctv-card-img class="thumbnail" url="https://www.cam.tv/lucaambrosini?shun=mariorossi" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+						</li>
+						<!-- Tip: L'url di <a> è composto da "URIname" e "shun" -->
+						<li>
+							<ctv-card-img class="thumbnail" url="https://www.cam.tv/lucaambrosini?shun=mariorossi" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+
+			<!-- FEEDITEM CON FEEDPRODUCT IN ANTEPRIMA IN FORYOU -->
+			<div class="ctv-item feed z-depth-1">
+				<!--
+				<div class="ctv-item-cpnt-header">
+					
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+					
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">28/09/2020, 16:20</span>
+						</p>
+					</div>
+				</div>
+				-->
+				<div class="ctv-item-cpnt-title">
+					<!-- Tip: Se l'ITEM si trova nella sezione ForYou usiamo h2. Se si trova nella pagina singola usiamo h1 -->
+					<!-- <h1>Professionally transition integrated metrics (FEEDITEM CON FEEDPRODUCT IN ANTEPRIMA IN FORYOU)</h1> -->
+					<h2>Professionally transition integrated metrics (FEEDITEM CON FEEDPRODUCT IN ANTEPRIMA IN FORYOU)</h2>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Enthusiastically disintermediate bleeding-edge "outside the box" thinking and B2B convergence. Seamlessly pursue stand-alone processes for robust applications. Efficiently unleash economically sound systems after real-time results. Holisticly fabricate impactful methodologies after maintainable.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://media1.testcam.tv/CID00747D/feed/FID0048FD/cover.jpg">
+					</ctv-card-img>
+				</div>
+
+				<div class="cards">
+					<!-- ESEMPIO DI ctv-card-feedproduct COPIATO E NON MODIFICATO -->
+					<ctv-card-feedproduct class="ctv-card" style="background-image:url();" card_id="0" fpd="FPD00009C" title="Objectively engage (Prodotto)" text="Dramatically synergize distributed imperatives vis-a-vis world-class platforms. Conveniently visualize web-enabled infomediaries after equity invested internal or “organic“ sources. Conveniently fabricate mission-critical functionalities and e-business resources." cover="https://media1.testcam.tv:443/CID009416/product/FPD00009C/cover.jpg?t=-2147483648" cover_ratio="7067" price="1000000" viewable="false" thankyou_url=""><!---->
+						<div class="card-feedproduct">
+							<div class="title">Objectively engage (Prodotto)</div>
+							<div class="card-feedproduct-row">
+								<div class="cover" style="background-image: url('https://media1.testcam.tv/CID009416/product/FPD00009C/w320/cover.jpg?t=-2147483648');"></div>
+								<div class="description">
+									<p class="d-text">
+										Dramatically synergize distributed imperatives vis-a-vis world-class platforms. Conveniently visualize web-enabled infomediaries after equity invested internal or “organic“ sources. Conveniently fabricate mission-critical functionalities and e-business resources.<!---->
+									</p>
+									<div class="action purchase-feedproduct">
+										<a class="ctv-btn solid small" target="_blank" href="https://www.testcam.tv/ExternalPurchasePage.html?FPD=FPD00009C&RedirectURL=&shun=gavis37910">
+											<i class="mdi mdi-cart"></i>
+											<span>10,00 € - Acquista</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ctv-card-feedproduct>
+				</div>
+
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<button class="plain-cta">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+				<ctv-comments
+					itemid="PID210654"
+					publisheruriname="undefined"
+					publisherthumb="undefined"
+					jqsendcommentloader="undefined"
+					vcomments='[{"ID":431852,"ParentCommentID":-1,"Text":"Bellissimi!","CreationDateTime":"2020-09-16T20:34:09","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Scienza e conoscenza","URIName":"scienzaeconoscenza","ThumbnailURL":"https://media.cam.tv/CID0148CD/profile/thumbnail.jpg?t=1559628120","AcceptMessages":3,"AcceptCalls":3},"Responses":[{"ID":431855,"ParentCommentID":431852,"Text":"Sono capolavori dei maestri famosi","CreationDateTime":"2020-09-16T20:55:26","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Maria Kiraly","URIName":"mariakiraly","ThumbnailURL":"https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169","AcceptMessages":3,"AcceptCalls":3},"Responses":[],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false}],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false},{"ID":432141,"ParentCommentID":-1,"Text":"se posso permettermi una piccola critica... albero e vaso ben abbinati, - il tavolino è completamente sbagliato , la conifera è considerata , in Giappone una pianta maschile , quel tavolino con la griglia è per latifoglie e caducifoglie che sono piante femminili.","CreationDateTime":"2020-09-18T11:04:12","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"franco Rimoldi","URIName":"francorimoldi","ThumbnailURL":"https://media.cam.tv/CID01408B/profile/thumbnail.jpg?t=1559628117","AcceptMessages":3,"AcceptCalls":3},"Responses":[],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false},{"ID":432354,"ParentCommentID":-1,"Text":"Molto belli !\nMi ha sempre affascinato l arte del Bonsai \nse vuoi, ti metto il link del mio canale dedicato a piante e fiori, dove tra le altre ci sono delle foto di bonsai che avevo fatto all Euroflora 2018 ai parchi di Nervi (Ge):\nhttps://www.cam.tv/flowers/blog","CreationDateTime":"2020-09-19T13:53:57","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Diego Ferin","URIName":"diegoferin","ThumbnailURL":"https://media.cam.tv/CID006463/profile/thumbnail.jpg?t=1559628061","AcceptMessages":3,"AcceptCalls":3},"Responses":[{"ID":432374,"ParentCommentID":432354,"Text":"Grazie, anch io avevo una pianta loropetalum chinensis esposto all Euroflora con la Scuola Arte Bonsai anni fa.. ho visto le tue piante, sono molto belle complimenti.","CreationDateTime":"2020-09-19T16:01:05","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Maria Kiraly","URIName":"mariakiraly","ThumbnailURL":"https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169","AcceptMessages":3,"AcceptCalls":3},"Responses":[],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false}],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false}]'
+					totalcomments="3"
+					vhighlightcommentids="[]">
+				</ctv-comments>
+			</div>
+
+			<!-- FEEDITEM IN ANTEPRIMA IN FORYOU -->
+			<div class="ctv-item feed z-depth-1">
+				<!--
+				<div class="ctv-item-cpnt-header">
+					
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+					
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">29/09/2020, 10:30</span>
+						</p>
+					</div>
+				</div>
+				-->
+				<div class="ctv-item-cpnt-title">
+					<!-- Tip: Se l'ITEM si trova nella sezione ForYou usiamo h2. Se si trova nella pagina singola usiamo h1 -->
+					<!-- <h1>Professionally transition integrated metrics (FEEDITEM IN ANTEPRIMA IN FORYOU)</h1> -->
+					<h2>Professionally transition integrated metrics (FEEDITEM IN ANTEPRIMA IN FORYOU)</h2>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Enthusiastically disintermediate bleeding-edge "outside the box" thinking and B2B convergence. Seamlessly pursue stand-alone processes for robust applications. Efficiently unleash economically sound systems after real-time results. Holisticly fabricate impactful methodologies after maintainable content. Dramatically grow optimal catalysts for change with revolutionary leadership skills.
+							Intrinsicly transform open-source systems vis-a-vis low-risk high-yield platforms. Conveniently grow highly.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://media1.testcam.tv/CID00747D/feed/FID0048FD/cover.jpg">
+					</ctv-card-img>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-- Tip: Il bottone "Leggi tutto" va nascosto nella pagina singola -->
+					<button class="plain-cta">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+				<ctv-comments
+					itemid="PID210654"
+					publisheruriname="undefined"
+					publisherthumb="undefined"
+					jqsendcommentloader="undefined"
+					vcomments='[{"ID":431852,"ParentCommentID":-1,"Text":"Bellissimi!","CreationDateTime":"2020-09-16T20:34:09","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Scienza e conoscenza","URIName":"scienzaeconoscenza","ThumbnailURL":"https://media.cam.tv/CID0148CD/profile/thumbnail.jpg?t=1559628120","AcceptMessages":3,"AcceptCalls":3},"Responses":[{"ID":431855,"ParentCommentID":431852,"Text":"Sono capolavori dei maestri famosi","CreationDateTime":"2020-09-16T20:55:26","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Maria Kiraly","URIName":"mariakiraly","ThumbnailURL":"https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169","AcceptMessages":3,"AcceptCalls":3},"Responses":[],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false}],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false},{"ID":432141,"ParentCommentID":-1,"Text":"se posso permettermi una piccola critica... albero e vaso ben abbinati, - il tavolino è completamente sbagliato , la conifera è considerata , in Giappone una pianta maschile , quel tavolino con la griglia è per latifoglie e caducifoglie che sono piante femminili.","CreationDateTime":"2020-09-18T11:04:12","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"franco Rimoldi","URIName":"francorimoldi","ThumbnailURL":"https://media.cam.tv/CID01408B/profile/thumbnail.jpg?t=1559628117","AcceptMessages":3,"AcceptCalls":3},"Responses":[],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false},{"ID":432354,"ParentCommentID":-1,"Text":"Molto belli !\nMi ha sempre affascinato l arte del Bonsai \nse vuoi, ti metto il link del mio canale dedicato a piante e fiori, dove tra le altre ci sono delle foto di bonsai che avevo fatto all Euroflora 2018 ai parchi di Nervi (Ge):\nhttps://www.cam.tv/flowers/blog","CreationDateTime":"2020-09-19T13:53:57","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Diego Ferin","URIName":"diegoferin","ThumbnailURL":"https://media.cam.tv/CID006463/profile/thumbnail.jpg?t=1559628061","AcceptMessages":3,"AcceptCalls":3},"Responses":[{"ID":432374,"ParentCommentID":432354,"Text":"Grazie, anch io avevo una pianta loropetalum chinensis esposto all Euroflora con la Scuola Arte Bonsai anni fa.. ho visto le tue piante, sono molto belle complimenti.","CreationDateTime":"2020-09-19T16:01:05","Deleted":"0001-01-01T00:00:00","ChannelData":{"Name":"Maria Kiraly","URIName":"mariakiraly","ThumbnailURL":"https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169","AcceptMessages":3,"AcceptCalls":3},"Responses":[],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false}],"ResponsesCount":0,"IsOwnComment":false,"IsOwnItem":false}]'
+					totalcomments="3"
+					vhighlightcommentids="[]">
+				</ctv-comments>
+			</div>
+		
+		</div>
+		<!-- CARDS END -->
+
+
+		<div class="card-local sidebar-col">
+			<include src="common/section-local.html"></include>
+		</div>
+	</main>
+	
+
+	<include src="dialogs/dialog-login.html"></include>
+	<include src="dialogs/dialog-local.html"></include>
+
+	<script type="text/javascript">
+		$( document ).ready(function() {
+  			$( ".hamburger-menu, .overlay-menu-mobile" ).on( "click", function() {
+  				$( ".hamburger-menu" ).toggleClass("open");
+  				$( "ctv-menu" ).toggleClass("open");
+  				$( ".overlay-menu-mobile" ).toggleClass("open");
+			});
+
+			$( ".BtnLocal" ).on( "click", function() {
+  				$( ".DialogLocal" ).fadeIn(300);
+			});
+
+			$( ".BtnLogin" ).on( "click", function() {
+  				$( ".DialogLogin" ).fadeIn(300);
+			});
+
+			$( ".dialog .CloseDialog" ).on( "click", function() {
+  				$( ".dialog" ).fadeOut(300);
+			});
+		});
+	</script>
+
+</body>
+</html>
