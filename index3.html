@@ -1,0 +1,2172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<title>{{ Page.Title }}</title>
+
+	<!-- MORE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<!--PURE CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+	<!--RESET-->
+	<link rel="stylesheet" type="text/css" href="css/main/reset.scss">
+	<!-- VIDEO-JS FROM CAMTV (only for this example page) -->
+	<link rel="stylesheet" type="text/css" href="https://cdnstatic.cam.tv/appchk/front/it/13.4ca7964178c92beb4dc8.min.css">
+	<!-- HEADER AND CARDS -->
+	<link rel="stylesheet" type="text/css" href="https://camtv.github.io/pagebuilder/develop/cards.css?cff281c4f2d6cd13f2ef">
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.scss"> -->
+	<!-- ALL ITEMS -->
+	<link rel="stylesheet" type="text/css" href="css/main/extern-channel.scss">
+	<link rel="stylesheet" type="text/css" href="css/main/ctv-item-all.scss">
+	<link rel="stylesheet" type="text/css" href="css/main/supporters-widget.scss">
+	<!-- THEMES -->
+	<link rel="stylesheet" type="text/css" href="css/themes/ctv-cards-theme-default.scss">
+	<!-- MODIFIERS -->
+	<link rel="stylesheet" type="text/css" href="css/modifiers.scss">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.4.3/webcomponents-bundle.js"></script>
+	<script src="https://camtv.github.io/pagebuilder/develop/cards.js"></script>
+	<script src="js/ctv-comments.js"></script>
+	<script src="js/ctv-item-feed.js"></script>
+	<script src="js/ctv-item-post.js"></script>
+	
+</head>
+
+<!--<body class="no-sidebar" style="background-color: #f6f6f6;">-->
+<body style="background-color: #f6f6f6;" class="layout-3-column">
+	
+	<include src="common/header.html"></include>
+	<!-- HEADER COMPONENT -->
+	<!--
+	<ctv-card-header
+		cover_url="https://cloud1.cam.tv/CID02639B/post/PID211211/cover.jpg"
+		thumbnail_url="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196"
+		name="Antonio Militello Albanese"
+		uriname="antonio_albanese"
+		founder_type="TOP_PRESIDENT"
+		certified="true"
+		fans_num="100"
+		likes_num="200"
+		stars="25"
+		share_url="https://www.cam.tv/camtvofficial"
+		menu='[{"label":"Info", "url":"https://www.cam.tv/pages/info"}, {"label":"Blog", "url":"https://www.cam.tv/pages/blog"}, {"label":"Video", "url":"https://www.cam.tv/pages/video"}, {"label":"ForYou", "url":"https://www.cam.tv/pages/foryou"}]'
+	>
+	</ctv-card-header>
+	-->
+	<!-- HEADER COMPONENT END -->
+
+	<!-- CARDS -->
+	<main class="limit-width-content">
+
+		<include src="common/menu.html"></include>
+		<!-- CARDS -->
+		<div class="main-content-area">
+
+			<ctv-item-post
+				key="PID2186DE"
+				inwall="true"
+				hascards="true"
+				thumbnail_url="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196"
+				name="Antonio Militello Albanese"
+				uriname="antonio_albanese"
+				datetime="07/10/2020, 14:31"
+				media_type="1"
+				price="0"
+				supports="319"
+				supporters='[{"Name": "Antonio Montemarano","ThumbnailURL": "https://media.cam.tv/CID0073DA/profile/thumbnail.jpg?t=1593864533","URIName": "antoniomontemarano","TotalSupportsGive": 11}, {"Name": "Gabriele Visintini","ThumbnailURL": "https://media.cam.tv/CID000016/profile/thumbnail.jpg?t=1559848400","URIName": "gabriele","TotalSupportsGive": 10}, {"Name": "Simone Volpi","ThumbnailURL": "https://media.cam.tv/CID008912/profile/thumbnail.jpg?t=1559628067","URIName": "simonevolpi","TotalSupportsGive": 10}, {"Name": "Alessandro Brunello","ThumbnailURL": "https://media.cam.tv/CID0028BB/profile/thumbnail.jpg?t=1559628049","URIName": "alessandrobrunello","TotalSupportsGive": 10}, {"Name": "Ivan Prez","ThumbnailURL": "https://media.cam.tv/CID002A2C/profile/thumbnail.jpg?t=1559628049","URIName": "ivan","TotalSupportsGive": 10}, {"Name": "Anima Edizioni","ThumbnailURL": "https://media.cam.tv/CID014982/profile/thumbnail.jpg?t=1559628121","URIName": "jonathanfalcone","TotalSupportsGive": 5}, {"Name": "Difesa Personale","ThumbnailURL": "https://media.cam.tv/CID00581D/profile/thumbnail.jpg?t=1559628058","URIName": "difesapersonale","TotalSupportsGive": 1}, {"Name": "Gisella Damiani","ThumbnailURL": "https://media.cam.tv/CID01620A/profile/thumbnail.jpg?t=1559628131","URIName": "giselladamiani","TotalSupportsGive": 1}, {"Name": "Social Talent","ThumbnailURL": "https://media.cam.tv/CID003B16/profile/thumbnail.jpg?t=1561818424","URIName": "socialtalent","TotalSupportsGive": 1}]'
+			>
+				<h2 class="ItemTitle">Titolo Primo Post</h2>
+				<img class="ItemImg" src="https://www.womblab.com/wp-content/uploads/2016/02/eventmanagement.jpg"/>
+				
+				<p class="ItemText">
+					Enthusiastically disintermediate bleeding-edge outside the box thinking and B2B convergence.
+					Seamlessly pursue stand-alone processes for robust applications.
+					Efficiently unleash economically sound systems after real-time results.
+					Holisticly fabricate impactful methodologies after maintainable.
+				</p>
+				
+				<div class="ItemComments">
+					<div
+						data-ctv="ctv-comments"
+						mkey="PID1A1184"
+						totalcomments="30"
+						parentcommentid=""
+					>
+						<div data-ctv="ctv-comment"
+						author="Maria Kiraly"
+						authorthumb="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"
+						authoruriname="mariakiraly"
+						creationdatetime="2020-09-16T20:55:26">
+							<p>Sono capolavori dei maestri famosi</p>
+						</div>
+					</div>
+				</div>
+			</ctv-item-post>
+
+			<ctv-item-feed
+				key="FID000007A"
+				inwall="false"
+				hascards="true"
+				thumbnail_url="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196"
+				name="Antonio Militello Albanese"
+				uriname="antonio_albanese"
+				slogan="Fin che la barca va!"
+				shun="francescodigiusto"
+				votes="3"
+				stars="32"
+				media_type="1"
+			>
+				<h2 class="ItemTitle">Title Secondo Feed Item</h2>
+				<img class="ItemImg" src="https://media1.testcam.tv/CID00747D/feed/FID0048FD/cover.jpg"/>
+				<p class="ItemText">
+					Feed Item Text Enthusiastically disintermediate bleeding-edge outside the box thinking and B2B convergence.
+					Seamlessly pursue stand-alone processes for robust applications.
+					Efficiently unleash economically sound systems after real-time results.
+					Holisticly fabricate impactful methodologies after maintainable.
+				</p>
+				<div class="ItemComments">
+					<div
+						data-ctv="ctv-comments"
+						mkey="PID1A1184"
+						totalcomments="3"
+						parentcommentid=""
+					>
+						<div data-ctv="ctv-comment"
+							author="Scienza e conoscenza"
+							authorthumb="https://media.cam.tv/CID0148CD/profile/thumbnail.jpg?t=1559628120"
+							authoruriname="scienzaeconoscenza"
+							creationdatetime="2020-09-16T20:34:09">
+							<p>Bellissimi!</p>
+							<div data-ctv="ctv-comments">
+								<div data-ctv="ctv-comment"
+								author="Maria Kiraly"
+								authorthumb="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"
+								authoruriname="mariakiraly"
+								creationdatetime="2020-09-16T20:55:26">
+									<p>Sono capolavori dei maestri famosi</p>
+								</div>
+							</div>
+						</div>
+						<div data-ctv="ctv-comment"
+							author="franco Rimoldi"
+							authorthumb="https://media.cam.tv/CID01408B/profile/thumbnail.jpg?t=1559628117"
+							authoruriname="francorimoldi"
+							creationdatetime="2020-09-18T11:04:12">
+							<p>se posso permettermi una piccola critica... albero e vaso ben abbinati, - il tavolino è completamente sbagliato , la conifera è considerata , in Giappone una pianta maschile , quel tavolino con la griglia è per latifoglie e caducifoglie che sono piante femminili.</p>
+						</div>
+						<div data-ctv="ctv-comment"
+							author="Diego Ferin"
+							authorthumb="https://media.cam.tv/CID006463/profile/thumbnail.jpg?t=1559628061"
+							authoruriname="diegoferin"
+							creationdatetime="2020-09-19T13:53:57">
+							<p>Molto belli !
+								Mi ha sempre affascinato l arte del Bonsai 
+								se vuoi, ti metto il link del mio canale dedicato a piante e fiori, dove tra le altre ci sono delle foto di bonsai che avevo fatto all Euroflora 2018 ai parchi di Nervi (Ge):
+								https://www.cam.tv/flowers/blog</p>
+							<div data-ctv="ctv-comments">
+								<div data-ctv="ctv-comment"
+								author="Maria Kiraly"
+								authorthumb="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"
+								authoruriname="mariakiraly"
+								creationdatetime="2020-09-19T16:01:05">
+									<p>Grazie, anch io avevo una pianta loropetalum chinensis esposto all Euroflora con la Scuola Arte Bonsai anni fa.. ho visto le tue piante, sono molto belle complimenti.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ItemCards">
+					<h2>Interactively myocardinate collaborative convergence vis-a-vis unique supply chains.</h2>
+					<p>Phosfluorescently scale inexpensive systems vis-a-vis competitive benefits. 
+						<strong>Rapidiously</strong> integrate cross functional applications vis-a-vis visionary manufactured products. 
+						Continually <em>coordinate equity</em> invested sources without B2B <u>channels</u>. 
+						Distinctively simplify robust content before client-centric systems.<br>
+						<s>Globally strategize high-quality solutions for sticky materials.</s> 
+						Credibly revolutionize mission-critical niche markets with team driven bandwidth. 
+						<span style="color:#008a00">Globally restore standardized sources</span> 
+						rather than progressive best practices. Professionally embrace B2B niche markets without quality innovation. 
+						<span style="background-color:#cce0f5">Collaboratively syndicate effective e-commerce vis-a-vis intuitive infomediaries.</span><br>
+						Assertively actualize <a href="https://www.google.it" target="_blank">market</a> positioning infrastructures vis-a-vis emerging information. 
+						Globally create diverse deliverables and alternative infomediaries. Rapidiously enable principle-centered information and clicks-and-mortar architectures.
+					</p>
+					<blockquote>Proactively morph alternative infomediaries without distinctive relationships. </blockquote>
+					<p>Professionally administrate customer directed catalysts for change after business experiences.</p>
+					<ol>
+						<li>quickly</li>
+						<li>incubate</li>
+						<li>impactful</li>
+						<li>value</li>
+					</ol>
+					<p>before functionalized schemas. Professionally expedite cross functional scenarios through resource maximizing metrics.</p>
+					<ul>
+						<li>credibly</li>
+						<li>initiate</li>
+						<li>flexible</li>
+						<li>initiatives</li>
+					</ul>
+					<p>Via extensive<sub>channels</sub> proactively revolutionize<sup>virtual</sup> catalysts for change with resource sucking quality vectors. 
+						Dynamically evisculate next-generation manufactured products without bricks-and-clicks solutions.<br>
+					</p>
+					<p class="ql-indent-1">Progressively incubate client-focused ideas without optimal partnerships.</p>
+					<p class="ql-indent-2">Appropriately transform user.</p>
+					<p>Rapidiously mesh standards compliant communities via seamless communities. Dramatically disseminate market positioning convergence for wireless platforms.</p>
+					<p class="ql-align-right">Objectively customize frictionless niche markets.</p>
+
+					<div data-ctv="ctv-card-button"
+						label="Vai alla pagina del libro"
+						target="0"
+						href="https://www.google.it"
+						cls="classStyle"
+						color="#ff7d02">
+					</div>
+
+					<div data-ctv="ctv-card-img" src="https://www.womblab.com/wp-content/uploads/2016/02/eventmanagement.jpg">
+					</div>
+
+					<div data-ctv="ctv-card-countdown"
+						title="Data Webinar - Venerdì 18 dicembre 2020 alle 10:30h"
+						start_date="1600760725"
+						end_date="1635406044000"
+						duration_minutes="100000"
+						timeout_url="http://www.google.it"
+						outoftime_url="http://www.google.it"
+						overtime_minutes="60"
+					></div>
+
+					<div data-ctv="ctv-card-video"
+						card_id="123124"
+						src="http://localhost:1234/big_buck_bunny_720p_1mb.mp4"
+						poster="https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title="Titolo del video"
+						alt="Testo alternativo se il video non è supportato">
+					</div>
+					<div data-ctv="ctv-card-video"
+						card_id="123124"
+						src="https://cloud1.cam.tv/CID06A252/video/VID01665A/index.mp4"
+						poster= "https://media.cam.tv/CID015516/profile/w620/cover.jpg?t=1570275523"
+						title="Titolo del video"
+						alt="Testo alternativo se il video non è supportato">
+					</div>
+
+					<div data-ctv="ctv-card-business"
+						surname="Seri"
+						name="Anand"
+						mobile="+39 000 000 000 "
+						jobtitle="Co-Founder – CFO"
+						email="serianand@gmail.com"
+						site="https://cam.tv/serianand"
+						address="Via Roma 22, Udine (UD), Italia"
+						social_fb="https://facebook.com/serianand.com"
+						social_twitter="https://twitter.com/serianand"
+						social_instagram="https://instagram.comserianand"
+						social_youtube="https://youtube.com/serianand"
+						social_pinterest="https://pinterest.com/serianand">
+					</div>
+					<div data-ctv="ctv-card-map"
+						position="46.0559386,13.208025"
+						width="100%"
+						height="500"
+						zoom="12"
+						isSatellite="1">
+					</div>
+
+					<div data-ctv="ctv-card-contact-form"
+						title="Contact and location"
+						text="Ciao, contattami attraverso questo form"
+						email="serianand@gmail.com"
+					></div>
+
+					<div data-ctv="ctv-card-map"
+						address="Via Trieste 124, Gonars"
+						width="100%"
+						height="500"
+						zoom="12"
+						isSatellite="1">
+					</div>
+					
+					<p>
+						<div data-ctv="ctv-card-txt" class='ctv-card ' style='background-image:url();' card_id='478501'>
+						<h2>La possibilità per la nuova imprenditoria di accedere a finanziamenti agevolati e contributi a fondo perduto </h2>
+						<p>Oggi, nel tempo della rivoluzione digitale, vediamo nascere, crescere e a volte morire, numerose start-up innovative e microimprese. Queste attività considerate nel loro insieme, stanno generando un sistema sempre più consistente all’interno dell’economia italiana.</p><p> </p><p>Nella <b>finanza agevolata</b> rientrano tutti quegli investimenti che hanno come obiettivo quello di favorire lo sviluppo di nuove start-up o di nuovi progetti aziendali, attraverso <b>agevolazioni che possono essere emanate dalle Regioni, dallo Stato o dall’Unione Europea. </b></p><p> </p><p>Le <b>misure emanate dell’Unione Europea</b> possono essere applicate sia direttamente in ciascuno Stato membro, che indirettamente tramite la gestione del singolo legislatore. </p>
+						<p>Nel caso dell’<b>Italia</b>, il nostro governo periodicamente e sistematicamente emana decreti e regolamenti relativi alle politiche di agevolazioni alle imprese. Anche le <b>Regioni</b> possono erogare degli strumenti a sostegno delle nuove realtà imprenditoriali.</p>
+						</div>
+						<div data-ctv="ctv-card-img" class='ctv-card ' style='background-image:url();' card_id='478505' src='https://media.cam.tv:443/CID013552/post/images/jp295d9319ab.jpg?t=1600690251' title='' alt='' url=''></div>
+						<div data-ctv="ctv-card-txt" class='ctv-card ' style='background-image:url();' card_id='478509'>
+						<h2>Bandi e Misure</h2>
+						<p><b>La finanza agevolata</b> <b>si compone </b>sia<b> di Bandi</b> che di <b>Misure, </b>a cui possono partecipare: <em>microimprese, pm</em>i (piccole e medie imprese), <em>start up innovative</em>, <em>imprese femminili </em>(cioè costituite in prevalenza da donne),<em> imprese giovanili </em>(costituite da giovani al di sotto dei 36 anni), <em>liberi professionisti e nuovi imprenditori.</em></p>
+						<p> </p>
+						<p>I <b>settori</b> presi in considerazione sono molteplici: turismo, industria, cultura, agricoltura, sia per attività classiche che innovative.</p>
+						<p>Una cosa importante da sapere è la <b>differenza tra Misure e Bandi</b>.</p>
+						<p> </p>
+						<p>Le <b>Misure</b> prevedono l’esaurimento dei fondi messi a disposizione e non prevedono un limite temporale, a differenza dei <b>Bandi, </b> che invece hanno scadenze ben precise e delle graduatorie.</p>
+						<p>All’interno della <b>finanza agevolata</b> rientrano tutta una serie di agevolazioni quali: <b>contributi a fondo perduto</b> (per cui non è prevista la restituzione), <b>contributi in conto interessi</b> (agevolazione sugli interessi); <b>contributi in conto canoni </b>(orientati al finanziamento di canoni di locazione), <b>sgravi fiscali</b>, <b>credito agevolato</b> (applicazione di tassi inferiori a quelli di mercato).</p>
+						<p><b>Le spese ammesse</b> possono essere sia gli investimenti materiali (macchinari ed impianti strettamente connessi al ciclo produttivo), sia gli investimenti immateriali (spese per studi, consulenze, software e brevetti).</p>
+						<p>I bandi e le misure che rientrano nella finanza agevolata di solito indicano con precisione le<em> <b>spese finanziabili.</b></em></p>
+						<p>La maggior parte dei <b>contribuiti </b>sono soggetti a regime <b>“de minimis” </b>cioè i contributi possono essere concessi senza che il paese membro debba notificarlo all’Unione Europea.</p>
+						<p>La <b>Regione Lazio</b> su questo tema è una delle più attive d’Italia, offrendo innumerevoli opportunità.</p>
+						</div>
+						<div data-ctv="ctv-card-txt" class='ctv-card ' style='background-image:url();' card_id='478513'>
+						<h2>Sei interessato all`argomento e vuoi saperne di più?</h2>
+						<p>Contattaci se vuoi, attraverso il form</p>
+						</div>
+						<div data-ctv="ctv-card-contact-form" class='ctv-card ' style='background-image:url();'
+						card_id='478517'
+						title='Form di contatto'
+						text='Contattami attraverso questo form'
+						item_key=''
+						terms_link=''
+						></div>
+						</p>
+					<div data-ctv="ctv-card-feedproduct" class='ctv-card' style='background-image:url();'
+						card_id='0'
+						fpd='FPD0000A1'
+						title='Bello bellissimo'
+						text='Di più'
+						cover='https://media1.testcam.tv:443/CID013552/product/FPD0000A1/cover.jpg?t=-2147483648'
+						cover_ratio='14983'
+						price='100000'
+						viewable='true'
+						thankyou_url=''
+					></div>
+
+					<div data-ctv="ctv-card-feeditem" data-ctv="ctv-card" style="background-image:url();" card_id="0" fid="FID00490A" title="Completely implement top-line interfaces via innovative functionalities" text="Energistically morph interactive content whereas open-source “outside the box“ thinking. Appropriately predominate high standards in e-commerce without virtual e-services. Distinctively promote." cover="https://media1.testcam.tv:443/CID009416/feed/FID00490A/cover.jpg?t=-2147483648" cover_ratio="1" uriname="gavis37910" auto_generated="true">
+						<div class="card-feeditem">
+							<div class="title">Completely implement top-line interfaces via innovative functionalities</div>
+							<div class="card-feeditem-row">
+								<div class="cover" style="background-image:url('https://media1.testcam.tv:443/CID009416/feed/FID00490A/cover.jpg?t=-2147483648')"></div>
+								<div class="description">
+									<p class="d-text">
+										Energistically morph interactive content whereas open-source “outside the box“ thinking. Appropriately predominate high standards in e-commerce without virtual e-services. Distinctively promote.
+									</p>
+									<div class="action">
+										<a class="ctv-btn solid small" href="javascript:void">
+											<i class="mdi mdi-login-variant"></i>
+											<span>Accedi per leggere</span>
+										</a>						
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ctv-item-feed>
+
+			<!-- <!-/- FEEDITEM IN ANTEPRIMA IN FORYOU -/->
+			<div class="ctv-item feed z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">28/09/2020, 16:20</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione ForYou usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<!-/- <h1>Professionally transition integrated metrics (FEEDITEM IN ANTEPRIMA IN FORYOU)</h1> -/->
+					<h2>Professionally transition integrated metrics (FEEDITEM IN ANTEPRIMA IN FORYOU)</h2>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Enthusiastically disintermediate bleeding-edge "outside the box" thinking and B2B convergence. Seamlessly pursue stand-alone processes for robust applications. Efficiently unleash economically sound systems after real-time results. Holisticly fabricate impactful methodologies after maintainable.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://media1.testcam.tv/CID00747D/feed/FID0048FD/cover.jpg">
+					</ctv-card-img>
+				</div>
+
+				<div class="cards">
+					<!-/- ESEMPIO DI ctv-card-feedproduct COPIATO E NON MODIFICATO -/->
+					<ctv-card-feedproduct data-ctv="ctv-card" style="background-image:url();" card_id="0" fpd="FPD00009C" title="Objectively engage (Prodotto)" text="Dramatically synergize distributed imperatives vis-a-vis world-class platforms. Conveniently visualize web-enabled infomediaries after equity invested internal or “organic“ sources. Conveniently fabricate mission-critical functionalities and e-business resources." cover="https://media1.testcam.tv:443/CID009416/product/FPD00009C/cover.jpg?t=-2147483648" cover_ratio="7067" price="1000000" viewable="false" thankyou_url=""><!-/--/->
+						<div class="card-feedproduct">
+							<div class="title">Objectively engage (Prodotto)</div>
+							<div class="card-feedproduct-row">
+								<div class="cover" style="background-image: url('https://media1.testcam.tv/CID009416/product/FPD00009C/w320/cover.jpg?t=-2147483648');"></div>
+								<div class="description">
+									<p class="d-text">
+										Dramatically synergize distributed imperatives vis-a-vis world-class platforms. Conveniently visualize web-enabled infomediaries after equity invested internal or “organic“ sources. Conveniently fabricate mission-critical functionalities and e-business resources.<!-/--/->
+									</p>
+									<div class="action purchase-feedproduct">
+										<a class="ctv-btn solid small" target="_blank" href="https://www.testcam.tv/ExternalPurchasePage.html?FPD=FPD00009C&RedirectURL=&shun=gavis37910">
+											<i class="mdi mdi-cart"></i>
+											<span>10,00 € - Acquista</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</ctv-card-feedproduct>
+				</div>
+
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<button class="plain-cta">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- FEEDITEM INTERO -/->
+			<div class="ctv-item feed z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">29/09/2020, 10:30</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione ForYou usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Articolo di prova per vedere se un feeditem si vede bene anche su testcam o se bigona invece fare qualcosa affinché andiamo meglio a visualizzare</h1>
+					<!-/- <h2>Professionally transition integrated metrics (FEEDITEM INTERO)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Ecco come possiamo fare a visualizzare meglio un articolo anche senza vedere se e come migliorare il pubblico di Cam.TV è possibile farlo senza nemmeno toccare una virgola dell'essenziale.</p>
+						<!-/- <p>Enthusiastically disintermediate bleeding-edge "outside the box" thinking and B2B convergence. Seamlessly pursue stand-alone processes for robust applications. Efficiently unleash economically sound systems after real-time results. Holisticly fabricate impactful methodologies after maintainable content. Dramatically grow optimal catalysts for change with revolutionary leadership skills.
+
+							Intrinsicly transform open-source systems vis-a-vis low-risk high-yield platforms. Conveniently grow highly.</p> -/->
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://media1.testcam.tv/CID00747D/feed/FID0048FD/cover.jpg">
+					</ctv-card-img>
+				</div>
+
+				<div class="cards">
+					<h2>Interactively myocardinate collaborative convergence vis-a-vis unique supply chains.</h2>
+					<p>Phosfluorescently scale inexpensive systems vis-a-vis competitive benefits. 
+						<strong>Rapidiously</strong> integrate cross functional applications vis-a-vis visionary manufactured products. 
+						Continually <em>coordinate equity</em> invested sources without B2B <u>channels</u>. 
+						Distinctively simplify robust content before client-centric systems.<br>
+						<s>Globally strategize high-quality solutions for sticky materials.</s> 
+						Credibly revolutionize mission-critical niche markets with team driven bandwidth. 
+						<span style="color:#008a00">Globally restore standardized sources</span> 
+						rather than progressive best practices. Professionally embrace B2B niche markets without quality innovation. 
+						<span style="background-color:#cce0f5">Collaboratively syndicate effective e-commerce vis-a-vis intuitive infomediaries.</span><br>
+						Assertively actualize <a href="https://www.google.it" target="_blank">market</a> positioning infrastructures vis-a-vis emerging information. 
+						Globally create diverse deliverables and alternative infomediaries. Rapidiously enable principle-centered information and clicks-and-mortar architectures.
+					</p>
+					<blockquote>Proactively morph alternative infomediaries without distinctive relationships. </blockquote>
+					<p>Professionally administrate customer directed catalysts for change after business experiences.</p>
+					<ol>
+						<li>quickly</li>
+						<li>incubate</li>
+						<li>impactful</li>
+						<li>value</li>
+					</ol>
+					<p>before functionalized schemas. Professionally expedite cross functional scenarios through resource maximizing metrics.</p>
+					<ul>
+						<li>credibly</li>
+						<li>initiate</li>
+						<li>flexible</li>
+						<li>initiatives</li>
+					</ul>
+					<p>Via extensive<sub>channels</sub> proactively revolutionize<sup>virtual</sup> catalysts for change with resource sucking quality vectors. 
+						Dynamically evisculate next-generation manufactured products without bricks-and-clicks solutions.<br>
+					</p>
+					<p class="ql-indent-1">Progressively incubate client-focused ideas without optimal partnerships.</p>
+					<p class="ql-indent-2">Appropriately transform user.</p>
+					<p>Rapidiously mesh standards compliant communities via seamless communities. Dramatically disseminate market positioning convergence for wireless platforms.</p>
+					<p class="ql-align-right">Objectively customize frictionless niche markets.</p>
+
+					<ctv-card-button
+						label="Vai alla pagina del libro"
+						target="0"
+						href="https://www.google.it"
+						cls="classStyle"
+						color="#ff7d02">
+					</ctv-card-button>
+
+					<ctv-card-img src="https://www.womblab.com/wp-content/uploads/2016/02/eventmanagement.jpg">
+					</ctv-card-img>
+
+					<ctv-card-countdown
+						title="Data Webinar - Venerdì 18 dicembre 2020 alle 10:30h"
+						start_date="1600760725"
+						end_date="1635406044000"
+						duration_minutes="100000"
+						timeout_url="http://www.google.it"
+						outoftime_url="http://www.google.it"
+						overtime_minutes="60"
+					></ctv-card-countdown>
+
+					<ctv-card-video
+						card_id="123124"
+						src="http://localhost:1234/big_buck_bunny_720p_1mb.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+
+					<ctv-card-business
+						surname="Seri"
+						name="Anand"
+						mobile="+39 000 000 000 "
+						jobtitle="Co-Founder – CFO"
+						email="serianand@gmail.com"
+						site="https://cam.tv/serianand"
+						address="Via Roma 22, Udine (UD), Italia"
+						social_fb="https://facebook.com/serianand.com"
+						social_twitter="https://twitter.com/serianand"
+						social_instagram="https://instagram.comserianand"
+						social_youtube="https://youtube.com/serianand"
+						social_pinterest="https://pinterest.com/serianand">
+					</ctv-card-business>
+					<ctv-card-map
+						position="46.0559386,13.208025"
+						width="100%"
+						height="500"
+						zoom="12"
+						isSatellite="1">
+					</ctv-card-map>
+
+					<ctv-card-contact-form
+						title="Contact and location"
+						text="Ciao, contattami attraverso questo form"
+						email="serianand@gmail.com"
+					></ctv-card-contact-form>
+
+					<ctv-card-map
+						address="Via Trieste 124, Gonars"
+						width="100%"
+						height="500"
+						zoom="12"
+						isSatellite="1">
+					</ctv-card-map>
+					
+					<p>
+						<ctv-card-txt class='ctv-card ' style='background-image:url();' card_id='478501'><h2>La possibilità per la nuova imprenditoria di accedere a finanziamenti agevolati e contributi a fondo perduto </h2><p>Oggi, nel tempo della rivoluzione digitale, vediamo nascere, crescere e a volte morire, numerose start-up innovative e microimprese. Queste attività considerate nel loro insieme, stanno generando un sistema sempre più consistente all’interno dell’economia italiana.</p><p> </p><p>Nella <b>finanza agevolata</b> rientrano tutti quegli investimenti che hanno come obiettivo quello di favorire lo sviluppo di nuove start-up o di nuovi progetti aziendali, attraverso <b>agevolazioni che possono essere emanate dalle Regioni, dallo Stato o dall’Unione Europea. </b></p><p> </p><p>Le <b>misure emanate dell’Unione Europea</b> possono essere applicate sia direttamente in ciascuno Stato membro, che indirettamente tramite la gestione del singolo legislatore. </p><p>Nel caso dell’<b>Italia</b>, il nostro governo periodicamente e sistematicamente emana decreti e regolamenti relativi alle politiche di agevolazioni alle imprese. Anche le <b>Regioni</b> possono erogare degli strumenti a sostegno delle nuove realtà imprenditoriali.</p></ctv-card-txt><ctv-card-img class='ctv-card ' style='background-image:url();' card_id='478505' src='https://media.cam.tv:443/CID013552/post/images/jp295d9319ab.jpg?t=1600690251' title='' alt='' url=''></ctv-card-img><ctv-card-txt class='ctv-card ' style='background-image:url();' card_id='478509'><h2>Bandi e Misure</h2><p><b>La finanza agevolata</b> <b>si compone </b>sia<b> di Bandi</b> che di <b>Misure, </b>a cui possono partecipare: <em>microimprese, pm</em>i (piccole e medie imprese), <em>start up innovative</em>, <em>imprese femminili </em>(cioè costituite in prevalenza da donne),<em> imprese giovanili </em>(costituite da giovani al di sotto dei 36 anni), <em>liberi professionisti e nuovi imprenditori.</em></p><p> </p><p>I <b>settori</b> presi in considerazione sono molteplici: turismo, industria, cultura, agricoltura, sia per attività classiche che innovative.</p><p>Una cosa importante da sapere è la <b>differenza tra Misure e Bandi</b>.</p><p> </p><p>Le <b>Misure</b> prevedono l’esaurimento dei fondi messi a disposizione e non prevedono un limite temporale, a differenza dei <b>Bandi, </b> che invece hanno scadenze ben precise e delle graduatorie.</p><p>All’interno della <b>finanza agevolata</b> rientrano tutta una serie di agevolazioni quali: <b>contributi a fondo perduto</b> (per cui non è prevista la restituzione), <b>contributi in conto interessi</b> (agevolazione sugli interessi); <b>contributi in conto canoni </b>(orientati al finanziamento di canoni di locazione), <b>sgravi fiscali</b>, <b>credito agevolato</b> (applicazione di tassi inferiori a quelli di mercato).</p><p><b>Le spese ammesse</b> possono essere sia gli investimenti materiali (macchinari ed impianti strettamente connessi al ciclo produttivo), sia gli investimenti immateriali (spese per studi, consulenze, software e brevetti).</p><p>I bandi e le misure che rientrano nella finanza agevolata di solito indicano con precisione le<em> <b>spese finanziabili.</b></em></p><p>La maggior parte dei <b>contribuiti </b>sono soggetti a regime <b>“de minimis” </b>cioè i contributi possono essere concessi senza che il paese membro debba notificarlo all’Unione Europea.</p><p>La <b>Regione Lazio</b> su questo tema è una delle più attive d’Italia, offrendo innumerevoli opportunità.</p></ctv-card-txt><ctv-card-txt class='ctv-card ' style='background-image:url();' card_id='478513'><h2>Sei interessato all`argomento e vuoi saperne di più?</h2><p>Contattaci se vuoi, attraverso il form</p></ctv-card-txt>
+						<ctv-card-contact-form class='ctv-card ' style='background-image:url();'
+							card_id='478517'
+							title='Form di contatto'
+							text='Contattami attraverso questo form'
+							item_key=''
+							terms_link=''
+						></ctv-card-contact-form>
+				   </p>
+					<ctv-card-feedproduct class='ctv-card' style='background-image:url();'
+						card_id='0'
+						fpd='FPD0000A1'
+						title='Bello bellissimo'
+						text='Di più'
+						cover='https://media1.testcam.tv:443/CID013552/product/FPD0000A1/cover.jpg?t=-2147483648'
+						cover_ratio='14983'
+						price='100000'
+						viewable='true'
+						thankyou_url=''
+					></ctv-card-feedproduct>
+
+					<!-/- ESEMPIO DI ctv-card-feeditem COPIATO E NON MODIFICATO -/->
+					<ctv-card-feeditem data-ctv="ctv-card" style="background-image:url();" card_id="0" fid="FID00490A" title="Completely implement top-line interfaces via innovative functionalities" text="Energistically morph interactive content whereas open-source “outside the box“ thinking. Appropriately predominate high standards in e-commerce without virtual e-services. Distinctively promote." cover="https://media1.testcam.tv:443/CID009416/feed/FID00490A/cover.jpg?t=-2147483648" cover_ratio="1" uriname="gavis37910" auto_generated="true"><!-/--/->
+						<div class="card-feeditem">
+							<div class="title">Completely implement top-line interfaces via innovative functionalities</div>
+							<div class="card-feeditem-row">
+								<div class="cover" style="background-image:url('https://media1.testcam.tv:443/CID009416/feed/FID00490A/cover.jpg?t=-2147483648')"></div>
+								<div class="description">
+									<p class="d-text">
+										Energistically morph interactive content whereas open-source “outside the box“ thinking. Appropriately predominate high standards in e-commerce without virtual e-services. Distinctively promote.
+									</p>
+									<div class="action">
+										<a class="ctv-btn solid small" href="javascript:void">
+											<i class="mdi mdi-login-variant"></i>
+											<span>Accedi per leggere</span>
+										</a>						
+									</div>
+								</div>
+							</div>
+						</div>
+					</ctv-card-feeditem>
+
+				</div>
+
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto nella pagina singola -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- WEBINAR GRATUITO NEL BLOG E PAGINA SINGOLA -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">25/09/2020, 11:00</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Blog usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Dynamically orchestrate competitive data (WEBINAR GRATUITO NEL BLOG E PAGINA SINGOLA)</h1>
+					<!-/- <h2>Dynamically orchestrate competitive data (WEBINAR GRATUITO NEL BLOG E PAGINA SINGOLA)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-video">
+					<!-/- Tip: A pagamento non deve essere disponibile/riproducibile da non loggato -/->
+					<ctv-card-video
+						card_id="123124"
+						src="http://localhost:1234/Dolphin.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+					<div class="video-ppv-overlay OnendingDialogWrap hidden" data-start-time="10">
+						<div class="video-ppv-dialog OnendingDialog">
+							<svg class="close Close" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+							</svg>
+							<h3>Vuoi acquistarlo?</h3>
+							<p>L’anteprima del video è finita. Se ti è piaciuta prosegui pure con l’acquisto!</p>
+							<p class="price Price"> 
+								<span>Prezzo: </span>
+								<span class="price-val PriceVal">1,00 €</span>
+							</p>
+							<div>
+								<button class="ctv-btn outline IframeBuyVideo">Acquista</button>
+							</div>
+						</div>
+					</div>
+					<!-/- Tip: Il webinar gratuito ha già l'img di anteprima in ctv-card-video -/->
+					<div class="webinar-poster hidden">
+						<div class="poster" style="background-image: url(https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg);">
+							<button class="ctv-btn translucent BtnWebinarAction">
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+								</svg>
+								<span>Acquista</span>
+								<span class="hidden">Vai alla diretta</span>
+							</button>
+						</div>
+					</div>
+					<div class="webinar-status">
+						<!-/- Tip: 2 casi: 1. led + "In Diretta" + time; 2. no led + "Replica" + no time -/->
+						<span class="led Led hidden"></span>
+						<span class="status Status hidden">In Diretta</span>
+						<span class="status Status">Replica</span>
+						<span class="time PlayingTime hidden">00:00</span>
+						<!-/- Tip: PrivateWebinar visibile solo se privata -/->
+						<svg class="private PrivateWebinar hidden" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M20.5,13A2.5,2.5 0 0,1 23,15.5V16A1,1 0 0,1 24,17V21A1,1 0 0,1 23,22H18A1,1 0 0,1 17,21V17A1,1 0 0,1 18,16V15.5A2.5,2.5 0 0,1 20.5,13M20.5,14A1.5,1.5 0 0,0 19,15.5V16H22V15.5A1.5,1.5 0 0,0 20.5,14M20,4H2V16H15V18H13V20H15V22H7V20H9V18H2C0.89,18 0,17.1 0,16V4C0,2.89 0.89,2 2,2H20A2,2 0 0,1 22,4V11.53C21.41,11.19 20.73,11 20,11V4Z" />
+						</svg>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently leverage other's superior process improvements with impactful strategic theme areas. Rapidiously plagiarize optimal internal or "organic" sources without cross-media action items.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">70</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- WEBINAR A PAGAMENTO NEL BLOG -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">24/09/2020, 17:00</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Blog usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Dynamically orchestrate competitive data (WEBINAR A PAGAMENTO NEL BLOG)</h1>
+					<!-/- <h2>Dynamically orchestrate competitive data (WEBINAR A PAGAMENTO NEL BLOG)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-video">
+					<!-/- Tip: A pagamento non deve essere disponibile/riproducibile da non loggato -/->
+					<ctv-card-video
+						class="hidden"
+						card_id="123124"
+						src="http://localhost:1234/Dolphin.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+					<div class="video-ppv-overlay OnendingDialogWrap hidden" data-start-time="10">
+						<div class="video-ppv-dialog OnendingDialog">
+							<svg class="close Close" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+							</svg>
+							<h3>Vuoi acquistarlo?</h3>
+							<p>L’anteprima del video è finita. Se ti è piaciuta prosegui pure con l’acquisto!</p>
+							<p class="price Price"> 
+								<span>Prezzo: </span>
+								<span class="price-val PriceVal">1,00 €</span>
+							</p>
+							<div>
+								<button class="ctv-btn outline IframeBuyVideo">Acquista</button>
+							</div>
+						</div>
+					</div>
+					<div class="webinar-poster">
+						<div class="poster" style="background-image: url(https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg);">
+							<button class="ctv-btn translucent BtnWebinarAction">
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+								</svg>
+								<span class="hidden">Acquista</span>
+								<span>Vai alla diretta</span>
+							</button>
+						</div>
+					</div>
+					<div class="webinar-status">
+						<!-/- Tip: 2 casi: 1. led verde + "In Diretta"; 2. no led + Replica -/->
+						<span class="led Led"></span>
+						<span class="status Status">In Diretta</span>
+						<span class="status Status hidden">Replica</span>
+						<span class="time PlayingTime">00:00</span>
+						<!-/- Tip: Se il webinar è privato facciamo vedere l'icona -/->
+						<svg class="private PrivateWebinar" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M20.5,13A2.5,2.5 0 0,1 23,15.5V16A1,1 0 0,1 24,17V21A1,1 0 0,1 23,22H18A1,1 0 0,1 17,21V17A1,1 0 0,1 18,16V15.5A2.5,2.5 0 0,1 20.5,13M20.5,14A1.5,1.5 0 0,0 19,15.5V16H22V15.5A1.5,1.5 0 0,0 20.5,14M20,4H2V16H15V18H13V20H15V22H7V20H9V18H2C0.89,18 0,17.1 0,16V4C0,2.89 0.89,2 2,2H20A2,2 0 0,1 22,4V11.53C21.41,11.19 20.73,11 20,11V4Z" />
+						</svg>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently leverage other's superior process improvements with impactful strategic theme areas. Rapidiously plagiarize optimal internal or "organic" sources without cross-media action items.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">70</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- WEBINAR A PAGAMENTO (PAGINA SINGOLA) -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">24/09/2020, 17:00</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Blog usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Dynamically orchestrate competitive data (WEBINAR A PAGAMENTO: PAGINA SINGOLA)</h1>
+					<!-/- <h2>Dynamically orchestrate competitive data (WEBINAR A PAGAMENTO: PAGINA SINGOLA)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-video">
+					<!-/- Tip: A pagamento non deve essere disponibile/riproducibile da non loggato -/->
+					<ctv-card-video
+						class="hidden"
+						card_id="123124"
+						src="http://localhost:1234/Dolphin.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+					<div class="video-ppv-overlay OnendingDialogWrap hidden" data-start-time="10">
+						<div class="video-ppv-dialog OnendingDialog">
+							<svg class="close Close" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+							</svg>
+							<h3>Vuoi acquistarlo?</h3>
+							<p>L’anteprima del video è finita. Se ti è piaciuta prosegui pure con l’acquisto!</p>
+							<p class="price Price"> 
+								<span>Prezzo: </span>
+								<span class="price-val PriceVal">1,00 €</span>
+							</p>
+							<div>
+								<button class="ctv-btn outline IframeBuyVideo">Acquista</button>
+							</div>
+						</div>
+					</div>
+					<div class="webinar-poster">
+						<div class="poster" style="background-image: url(https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg);">
+							<button class="ctv-btn translucent BtnWebinarAction">
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+								</svg>
+								<span>Acquista</span>
+								<span class="hidden">Vai alla diretta</span>
+							</button>
+						</div>
+					</div>
+					<div class="webinar-status">
+						<!-/- Tip: 2 casi: 1. led verde + "In Diretta"; 2. no led + Replica -/->
+						<span class="led Led"></span>
+						<span class="status Status">In Diretta</span>
+						<span class="status Status hidden">Replica</span>
+						<span class="time PlayingTime">00:00</span>
+						<!-/- Tip: Se il webinar è privato facciamo vedere l'icona -/->
+						<svg class="private PrivateWebinar" viewBox="0 0 24 24">
+							<path fill="currentColor" d="M20.5,13A2.5,2.5 0 0,1 23,15.5V16A1,1 0 0,1 24,17V21A1,1 0 0,1 23,22H18A1,1 0 0,1 17,21V17A1,1 0 0,1 18,16V15.5A2.5,2.5 0 0,1 20.5,13M20.5,14A1.5,1.5 0 0,0 19,15.5V16H22V15.5A1.5,1.5 0 0,0 20.5,14M20,4H2V16H15V18H13V20H15V22H7V20H9V18H2C0.89,18 0,17.1 0,16V4C0,2.89 0.89,2 2,2H20A2,2 0 0,1 22,4V11.53C21.41,11.19 20.73,11 20,11V4Z" />
+						</svg>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently leverage other's superior process improvements with impactful strategic theme areas. Rapidiously plagiarize optimal internal or "organic" sources without cross-media action items.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-price">
+					<div class="price-wrap">
+						<span>Prezzo: </span>
+						<span class="price-val">90,00 €</span>
+					</div>
+					<div class="status hidden">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+						</svg>
+						<span>Comprato</span>
+					</div>
+					<button class="ctv-btn solid small">Acquista Ora</button>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">70</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+			
+			<!-/- VIDEO GRATUITO -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">24/09/2020, 11:40</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Video usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Professionally seize mission-critical (VIDEO GRATUITO)</h1>
+					<!-/- <h2>Professionally seize mission-critical (VIDEO GRATUITO)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-video">
+					<ctv-card-video
+						card_id="123124"
+						src="http://localhost:1234/Dolphin.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently leverage other's superior process improvements with impactful strategic theme areas. Rapidiously plagiarize optimal internal or "organic" sources without cross-media action items.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">70</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- VIDEO A PAGAMENTO -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">24/09/2020, 11:40</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Video usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Professionally seize mission-critical (VIDEO A PAGAMENTO)</h1>
+					<!-/- <h2>Professionally seize mission-critical (VIDEO A PAGAMENTO)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-video">
+					<ctv-card-video
+						card_id="123124"
+						src="http://localhost:1234/Dolphin.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+
+					<div class="video-ppv-overlay OnendingDialogWrap" data-start-time="10">
+						<div class="video-ppv-dialog OnendingDialog">
+							<svg class="close Close" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+							</svg>
+							<h3>Vuoi acquistarlo?</h3>
+							<p>L’anteprima del video è finita. Se ti è piaciuta prosegui pure con l’acquisto!</p>
+							<p class="price Price"> 
+								<span>Prezzo: </span>
+								<span class="price-val PriceVal">1,00 €</span>
+							</p>
+							<div>
+								<button class="ctv-btn outline IframeBuyVideo">Acquista</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently leverage other's superior process improvements with impactful strategic theme areas. Rapidiously plagiarize optimal internal or "organic" sources without cross-media action items.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">70</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- POST CON IMMAGINE -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">23/09/2020, 12:00</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://cloud1.cam.tv/CID02639B/post/PID211211/w748/cover.jpg">
+					</ctv-card-img>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>(POST CON IMMAGINE) Phosfluorescently facilitate prospective meta-services for tactical e-services. Credibly plagiarize backward-compatible opportunities rather than premier initiatives. Objectively pursue multidisciplinary paradigms for interoperable metrics. Dynamically foster process-centric imperatives and technically sound interfaces. Appropriately maximize maintainable leadership whereas customized models. Interactively leverage existing resource sucking information whereas future-proof deliverables. Quickly exploit real-time methodologies vis-a-vis real-time platforms. Seamlessly provide access to B2C channels with tactical strategic.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">70</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- POST CON VIDEO A PAGAMENTO -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">23/09/2020, 12:00</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-video">
+					<ctv-card-video
+						card_id="123124"
+						src="http://localhost:1234/big_buck_bunny_720p_1mb.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+
+					<div class="video-ppv-overlay OnendingDialogWrap" data-start-time="10">
+						<div class="video-ppv-dialog OnendingDialog">
+							<svg class="close Close" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+							</svg>
+							<h3>Vuoi acquistarlo?</h3>
+							<p>L’anteprima del video è finita. Se ti è piaciuta prosegui pure con l’acquisto!</p>
+							<p class="price Price"> 
+								<span>Prezzo: </span>
+								<span class="price-val PriceVal">1,00 €</span>
+							</p>
+							<div>
+								<button class="ctv-btn outline IframeBuyVideo">Acquista</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>(POST CON VIDEO A PAGAMENTO) Phosfluorescently facilitate prospective meta-services for tactical e-services. Credibly plagiarize backward-compatible opportunities rather than premier initiatives. Objectively pursue multidisciplinary paradigms for interoperable metrics. Dynamically foster process-centric imperatives and technically sound interfaces. Appropriately maximize maintainable leadership whereas customized models. Interactively leverage existing resource sucking information whereas future-proof deliverables. Quickly exploit real-time methodologies vis-a-vis real-time platforms. Seamlessly provide access to B2C channels with tactical strategic.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">70</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- ARTICOLO GRATUITO IN ANTEPRIMA NEL BLOG -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">18/09/2020, 10:30</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Blog usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<!-/- <h1>Enthusiastically redefine equity (ARTICOLO GRATUITO IN ANTEPRIMA NEL BLOG)</h1> -/->
+					<h2>Enthusiastically redefine equity (ARTICOLO GRATUITO IN ANTEPRIMA NEL BLOG)</h2>
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://cloud1.cam.tv/CID0039FE/post/PID210AA9/cover.jpg">
+					</ctv-card-img>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently restore efficient internal or "organic" sources after best-of-breed systems. Enthusiastically redefine equity invested users rather than adaptive growth strategies. Uniquely negotiate highly efficient technology whereas seamless supply chains.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-read">
+					<button class="plain-cta">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- ARTICOLO INTERO GRATUITO -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">21/09/2020, 10:30</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Blog usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Enthusiastically redefine equity (ARTICOLO INTERO GRATUITO)</h1>
+					<!-/- <h2>Enthusiastically redefine equity (ARTICOLO INTERO GRATUITO)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://cloud1.cam.tv/CID0039FE/post/PID210AA9/cover.jpg">
+					</ctv-card-img>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently restore efficient internal or "organic" sources after best-of-breed systems. Enthusiastically redefine equity invested users rather than adaptive growth strategies. Uniquely negotiate highly efficient technology whereas seamless supply chains.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="cards">
+					<ctv-card-txt>
+						<h1>How it works</h1>
+						<p>The algorithm is pretty simple. We define a list of criteria that a content could match, and then we order them by priority. Each criterion must be a boolean.</p>
+						<p>Let’s say we are recommending articles. In order of priority.</p>
+						<p>John has not read My thoughts on the last season of Game of Thrones, but the article tags do not match any of John’s tags. Finally, the article is flagged important by the content team.</p>
+						<p>Our algorithm will sum the score of each criterion that matches to give a final score to the article for the calculation of John’s home page: 8+ 2= 10.</p>
+						<p>Repeating this process for each article, we can rank articles based on their scores. The highest articles will be displayed on John’s home page.</p>
+						<p>If you are wondering why we use powers of 2, we will come to that later in the article.</p>
+					</ctv-card-txt>
+
+					<ctv-card-img src="https://www.womblab.com/wp-content/uploads/2016/02/eventmanagement.jpg">
+					</ctv-card-img>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- ARTICOLO A PAGAMENTO IN ANTEPRIMA NEL BLOG -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">21/09/2020, 10:30</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Blog usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<!-/- <h1>Enthusiastically redefine equity (ARTICOLO A PAGAMENTO IN ANTEPRIMA NEL BLOG)</h1> -/->
+					<h2>Enthusiastically redefine equity (ARTICOLO A PAGAMENTO IN ANTEPRIMA NEL BLOG)</h2>
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://cloud1.cam.tv/CID0039FE/post/PID210AA9/cover.jpg">
+					</ctv-card-img>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently restore efficient internal or "organic" sources after best-of-breed systems. Enthusiastically redefine equity invested users rather than adaptive growth strategies. Uniquely negotiate highly efficient technology whereas seamless supply chains.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="ctv-item-cpnt-price">
+					<div class="price-wrap">
+						<span>Prezzo: </span>
+						<span class="price-val">45,00 €</span>
+					</div>
+					<div class="status hidden">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+						</svg>
+						<span>Comprato</span>
+					</div>
+					<button class="ctv-btn solid small">Acquista Ora</button>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+
+			<!-/- ARTICOLO INTERO A PAGAMENTO -/->
+			<div class="ctv-item z-depth-1">
+				<div class="ctv-item-cpnt-header">
+					<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+					<ctv-card-img
+						class="thumbnail"
+						url="https://www.cam.tv/antoniomilitello?shun=mariorossi"
+						src="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196">
+					</ctv-card-img>
+					<div class="owner-date-wrap">
+						<!-/- Tip: L'url di <a> è composto da "URIname" e "shun" -/->
+						<a class="owner" href="https://www.cam.tv/antoniomilitello?shun=mariorossi" target="_blank">Antonio Militello Albanese</a>
+						<p class="pub-date-wrap">
+							<svg viewBox="0 0 24 24" aria-hidden="true">
+								<path fill="currentColor" d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z" />
+							</svg>
+							<span class="pub-date">18/09/2020, 10:30</span>
+						</p>
+					</div>
+				</div>
+				<div class="ctv-item-cpnt-title">
+					<!-/- Tip: Se l'ITEM si trova nella sezione Blog usiamo h2. Se si trova nella pagina singola usiamo h1 -/->
+					<h1>Enthusiastically redefine equity (ARTICOLO INTERO A PAGAMENTO)</h1>
+					<!-/- <h2>Enthusiastically redefine equity (ARTICOLO INTERO A PAGAMENTO)</h2> -/->
+				</div>
+				<div class="ctv-item-cpnt-image">
+					<ctv-card-img src="https://cloud1.cam.tv/CID0039FE/post/PID210AA9/cover.jpg">
+					</ctv-card-img>
+				</div>
+				<div class="ctv-item-cpnt-txt">
+					<ctv-card-txt>
+						<p>Conveniently restore efficient internal or "organic" sources after best-of-breed systems. Enthusiastically redefine equity invested users rather than adaptive growth strategies. Uniquely negotiate highly efficient technology whereas seamless supply chains.</p>
+					</ctv-card-txt>
+				</div>
+				<div class="cards">
+					<ctv-card-txt>
+						<h1>How it works</h1>
+						<p>The algorithm is pretty simple. We define a list of criteria that a content could match, and then we order them by priority. Each criterion must be a boolean.</p>
+						<p>Let’s say we are recommending articles. In order of priority.</p>
+						<p>John has not read My thoughts on the last season of Game of Thrones, but the article tags do not match any of John’s tags. Finally, the article is flagged important by the content team.</p>
+						<p>Our algorithm will sum the score of each criterion that matches to give a final score to the article for the calculation of John’s home page: 8+ 2= 10.</p>
+						<p>Repeating this process for each article, we can rank articles based on their scores. The highest articles will be displayed on John’s home page.</p>
+						<p>If you are wondering why we use powers of 2, we will come to that later in the article.</p>
+					</ctv-card-txt>
+
+					<ctv-card-button
+						label="Vai alla pagina del libro"
+						target="0"
+						href="https://www.google.it"
+						cls="classStyle"
+						color="#ff7d02">
+					</ctv-card-button>
+
+					<ctv-card-img src="https://www.womblab.com/wp-content/uploads/2016/02/eventmanagement.jpg">
+					</ctv-card-img>
+
+					<ctv-card-countdown
+						title="Data Webinar - Venerdì 18 dicembre 2020 alle 10:30h"
+						start_date="1600760725"
+						end_date="1635406044000"
+						duration_minutes="100000"
+						timeout_url="http://www.google.it"
+						outoftime_url="http://www.google.it"
+						overtime_minutes="60"
+					></ctv-card-countdown>
+
+					<ctv-card-txt>
+						<h1>The place where the things happen</h1>
+						<p>Etiam sit amet pellentesque leo. Nulla malesuada tristique purus, et euismod tellus aliquam in. Maecenas varius nisi ac elit lobortis,
+							a pellentesque ipsum sagittis. Nam commodo sapien nec ligula luctus, non tincidunt nibh varius. Etiam auctor at nunc id scelerisque. 
+							Nam commodo sapien nec ligula luctus, non tincidunt nibh varius. Etiam auctor at nunc id scelerisque.
+							Etiam elit dui, varius eget venenatis id.
+						</p>
+						<p>Pellentesque tellus lorem, dignissim sit amet odio id, accumsan lobortis eros. Pellentesque semper augue egestas, maximus nisl et, dictum orci.</p>
+					</ctv-card-txt>
+
+					<ctv-card-video
+						card_id="123124"
+						src="http://localhost:1234/big_buck_bunny_720p_1mb.mp4"
+						poster= "https://cdn.videvo.net/videvo_files/images/preview_Dolphin.jpg"
+						title = "Titolo del video"
+						alt = "Testo alternativo se il video non è supportato">
+					</ctv-card-video>
+
+					<ctv-card-business
+						surname="Seri"
+						name="Anand"
+						mobile="+39 000 000 000 "
+						jobtitle="Co-Founder – CFO"
+						email="serianand@gmail.com"
+						site="https://cam.tv/serianand"
+						address="Via Roma 22, Udine (UD), Italia"
+						social_fb="https://facebook.com/serianand.com"
+						social_twitter="https://twitter.com/serianand"
+						social_instagram="https://instagram.comserianand"
+						social_youtube="https://youtube.com/serianand"
+						social_pinterest="https://pinterest.com/serianand">
+					</ctv-card-business>
+
+					<ctv-card-map
+						position="46.0559386,13.208025"
+						width="100%"
+						height="500"
+						zoom="12"
+						isSatellite="1">
+					</ctv-card-map>
+
+					<ctv-card-contact-form
+						title="Contact and location"
+						text="Ciao, contattami attraverso questo form"
+						email="serianand@gmail.com"
+					></ctv-card-contact-form>
+
+					<ctv-card-map
+						address="Via Trieste 124, Gonars"
+						width="100%"
+						height="500"
+						zoom="12"
+						isSatellite="1">
+					</ctv-card-map>
+
+				</div>
+				<!-/- Prezzo e bottone acquisto sono in .hidden -/->
+				<div class="ctv-item-cpnt-price">
+					<div class="price-wrap hidden">
+						<span>Prezzo: </span>
+						<span class="price-val">45,00 €</span>
+					</div>
+					<div class="status">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+						</svg>
+						<span>Comprato</span>
+					</div>
+					<button class="ctv-btn solid small hidden">Acquista Ora</button>
+				</div>
+				<div class="ctv-item-cpnt-actions">
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="truncate">Sostieni</span>
+					</button>
+					<button class="plain-link-default">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10Z" />
+						</svg>
+						<span class="truncate">Commenta</span>
+					</button>
+					<button class="plain-link-default" data-title="" data-href="" data-picture="" data-description="">
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" />
+						</svg>
+						<span class="truncate">Condividi</span>
+					</button>
+					<!-/- Tip: Il bottone "Leggi tutto" va nascosto. Serve solo per il FeedItem nella sezione ForYou -/->
+					<button class="plain-cta hidden">
+						<span class="truncate">Leggi tutto</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />
+						</svg>
+					</button>
+				</div>
+				<div class="ctv-item-cpnt-donations">
+					<div class="donations-content">
+						<svg class="heart" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+						</svg>
+						<span class="donations">320</span>
+						<span class="label">ricevuti da:</span>
+						<ul>
+							<li class="first">
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"></ctv-card-img>
+								<svg viewBox="0 0 24 24">
+									<path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+								</svg>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID027EA9/profile/thumbnail.jpg?t=1593953724"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID010CC8/profile/thumbnail.jpg?t=1559628096"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C48C/profile/thumbnail.jpg?t=1559628083"></ctv-card-img>
+							</li>
+							<li>
+								<ctv-card-img class="thumbnail" src="https://media.cam.tv/CID00C4CC/profile/thumbnail.jpg?t=1582044662"></ctv-card-img>
+							</li>
+						</ul>
+						<svg class="arrow" viewBox="0 0 24 24" aria-hidden="true">
+							<path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+						</svg>
+					</div>
+				</div>
+			</div> -->
+
+		</div>
+
+
+		<div class="card-local sidebar-col">
+			<include src="common/section-local.html"></include>
+		</div>
+
+
+	</main>
+	<!-- CARDS END -->
+
+	<include src="dialogs/dialog-login.html"></include>
+	<include src="dialogs/dialog-local.html"></include>
+
+	<script type="text/javascript">
+		$( document ).ready(function() {
+  			$( ".hamburger-menu, .overlay-menu-mobile" ).on( "click", function() {
+  				$( ".hamburger-menu" ).toggleClass("open");
+  				$( "ctv-menu" ).toggleClass("open");
+  				$( ".overlay-menu-mobile" ).toggleClass("open");
+			});
+
+			$( ".BtnLocal" ).on( "click", function() {
+  				$( ".DialogLocal" ).fadeIn(300);
+			});
+
+			$( ".BtnLogin" ).on( "click", function() {
+  				$( ".DialogLogin" ).fadeIn(300);
+			});
+
+			$( ".dialog .CloseDialog" ).on( "click", function() {
+  				$( ".dialog" ).fadeOut(300);
+			});
+		});
+	</script>
+
+	<script>
+		/*let vElementsToReplace = [
+			"ctv-item-post",
+			"ctv-item-feed",
+			"ctv-comments",
+			"ctv-comment"
+		];
+
+		let sElementsToReplace = "";
+
+		vElementsToReplace.forEach((o)=>{
+			if(sElementsToReplace.trim() != "")
+				sElementsToReplace += `, `;
+			sElementsToReplace += `[data-ctv=${o}]`;
+		})
+
+		while($(sElementsToReplace).length > 0){
+			$(sElementsToReplace).each((i, o) => {
+				ReplaceCtvNode(o);
+			});
+		}*/
+
+		// while($("[data-ctv]").length > 0){
+		// 	$("[data-ctv]").each((i, o) => {
+		// 		ReplaceCtvNode(o);
+		// 	});
+		// }
+
+		// function ReplaceCtvNode(jEl) {
+		// 	var original = jEl;
+		// 	var replacement = document.createElement(original.getAttribute("data-ctv"));
+		// 	for(var i = 0, l = original.attributes.length; i < l; ++i){
+		// 		var nodeName  = original.attributes.item(i).nodeName;
+		// 		var nodeValue = original.attributes.item(i).nodeValue;
+		// 		replacement.setAttribute(nodeName, nodeValue);
+		// 	}
+		// 	replacement.innerHTML = original.innerHTML;
+		// 	replacement.removeAttribute("data-ctv");
+		// 	original.parentNode.replaceChild(replacement, original);
+		// }
+	</script>
+</body>
+</html>
