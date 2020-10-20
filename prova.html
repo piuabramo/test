@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<title>{{ Page.Title }}</title>
+
+	<include src="common/head.html"></include>
+	
+</head>
+
+<body style="background-color: #f6f6f6;" class="layout-2-column">
+	
+	<include src="common/header.html"></include>
+
+	<main class="limit-width-content">
+
+		<include src="common/menu.html"></include>
+		
+		<div class="main-content-area">
+
+			<include src="common/breadcrumb.html"></include>
+
+			{% for Post in Posts %}
+				<ctv-item-post
+					key="{{ Post.PKey }}"
+					inwall="true"
+					hascards="{{ Post.hasCards}}"
+					thumbnail_url="{{ Post.ThumbnailURL }}"
+					name="{{ Channel.Name }}"
+					uriname="{{ Channel.URIName }}"
+					datetime="{{ Post.PublishedDateTime }}"
+					media_type="{{ Post.MediaType }}"
+					price="{{ Post.Price }}"
+					supports="{{ Post.TotalSupports }}"
+					supporters='{{ Post.BestSupporters }}'
+				>
+					<h2 class="ItemTitle">{{ Post.Title }}</h2>
+					<img class="ItemImg" src="{{ Post.ImageURL }}"/>
+					
+					<p class="ItemText">{{ Post.Text }}</p>
+					
+					<div class="ItemComments">
+						<div
+							data-ctv="ctv-comments"
+							mkey="{{ Post.PKey }}"
+							totalcomments="{{ Post.TotalComments }}"
+							parentcommentid=""
+						>
+							<div data-ctv="ctv-comment"
+							author="{{ Post.LastComment.ChannelData.Name }}"
+							authorthumb="{{ Post.LastComment.ChannelData.ThumbnailURL }}"
+							authoruriname="{{ Post.LastComment.ChannelData.URIName }}"
+							creationdatetime="{{ Post.LastComment.CreationDateTime }}">
+								<p>{{ Post.LastComment.Text }}</p>
+							</div>
+						</div>
+					</div>
+				</ctv-item-post>
+			{% endfor %}
+		</div>
+	</main>
+
+	<include src="dialogs/dialog-login.html"></include>
+	<include src="dialogs/dialog-local.html"></include>
+	<include src="dialogs/dialog-share.html"></include>
+
+	<script type="text/javascript">
+		// TODO delete - script only for demo 
+		$( document ).ready(function() {
+  			$( ".hamburger-menu, .overlay-menu-mobile" ).on( "click", function() {
+  				$( ".hamburger-menu" ).toggleClass("open");
+  				$( "ctv-card-menu-external" ).toggleClass("open");
+  				$( ".overlay-menu-mobile" ).toggleClass("open");
+			});
+
+			$( ".BtnLocal" ).on( "click", function() {
+  				$( ".DialogLocal" ).fadeIn(300);
+			});
+
+			
+			$( ".BtnShare" ).on( "click", function() {
+  				$( ".DialogShare" ).fadeIn(300);
+			});
+
+			$( ".BtnLogin" ).on( "click", function() {
+  				$( ".DialogLogin" ).fadeIn(300);
+			});
+
+			$( ".dialog .CloseDialog" ).on( "click", function() {
+  				$( ".dialog" ).fadeOut(300);
+			});
+		});
+	</script>
+
+
+	
+
+</body>
+</html>
