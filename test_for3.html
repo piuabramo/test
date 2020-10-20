@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+	<title>{{ Page.Title }}</title>
+
+	<!-- MORE FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<!--PURE CDN -->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+	<!--RESET-->
+	<link rel="stylesheet" type="text/css" href="css/main/reset.scss">
+	<!-- VIDEO-JS FROM CAMTV (only for this example page) -->
+	<link rel="stylesheet" type="text/css" href="https://cdnstatic.cam.tv/appchk/front/it/13.4ca7964178c92beb4dc8.min.css">
+	<!-- HEADER AND CARDS -->
+	<link rel="stylesheet" type="text/css" href="https://camtv.github.io/pagebuilder/develop/cards.css?cff281c4f2d6cd13f2ef">
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.scss"> -->
+	<!-- ALL ITEMS -->
+	<link rel="stylesheet" type="text/css" href="css/main/extern-channel.scss">
+	<link rel="stylesheet" type="text/css" href="css/main/ctv-item-all.scss">
+	<link rel="stylesheet" type="text/css" href="css/main/supporters-widget.scss">
+	<!-- THEMES -->
+	<link rel="stylesheet" type="text/css" href="css/themes/ctv-cards-theme-default.scss">
+	<!-- MODIFIERS -->
+	<link rel="stylesheet" type="text/css" href="css/modifiers.scss">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.4.3/webcomponents-bundle.js"></script>
+	<script src="https://camtv.github.io/pagebuilder/develop/cards.js"></script>
+	<script src="js/ctv-comments.js"></script>
+	<script src="js/ctv-item-feed.js"></script>
+	<script src="js/ctv-item-post.js"></script>
+	
+</head>
+
+<!--<body class="no-sidebar" style="background-color: #f6f6f6;">-->
+<body style="background-color: #f6f6f6;" class="layout-3-column">
+	
+	<include src="common/header.html"></include>
+	<!-- HEADER COMPONENT -->
+	
+	<ctv-card-header
+		cover_url="https://cloud1.cam.tv/CID02639B/post/PID211211/cover.jpg"
+		thumbnail_url="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196"
+		name="Antonio Militello Albanese"
+		uriname="antonio_albanese"
+		founder_type="TOP_PRESIDENT"
+		certified="true"
+		fans_num="100"
+		likes_num="200"
+		stars="25"
+		share_url="https://www.cam.tv/camtvofficial"
+		menu='[{"label":"Info", "url":"https://www.cam.tv/pages/info"}, {"label":"Blog", "url":"https://www.cam.tv/pages/blog"}, {"label":"Video", "url":"https://www.cam.tv/pages/video"}, {"label":"ForYou", "url":"https://www.cam.tv/pages/foryou"}]'
+	>
+	</ctv-card-header>
+	
+	<!-- HEADER COMPONENT END -->
+
+	<!-- CARDS -->
+	<main class="limit-width-content">
+
+		<include src="common/menu.html"></include>
+		
+		<div class="main-content-area">
+		
+			{% for Post in Posts %}
+        <ctv-item-post
+          key="{{ Post.PKEY }}"
+          inwall="true"
+          hascards="{{ PostHasCards }}"
+          thumbnail_url="https://serviceslocalcam.3technology.it/CID068043/profile/thumbnail.jpg?t=1597841196"
+          name="{{ Channel.Name }}"
+          uriname="{{ Channel.URIName}}"
+          datetime="{{ Post.PublishedDateTime }}"
+          media_type="{{ Post.MediaType }}"
+          price="{{ Post.Price }}"
+          supports="{{ Post.Supports }}"
+          supporters='{{ Post.BestSupporters }}'
+        >
+          <h2 class="ItemTitle">{{ Post.Title }}</h2>
+          <img class="ItemImg" src="{{ Post.ShareImageURL }}"/>
+
+          <p class="ItemText">
+            {{ Post.Text }}
+          </p>
+
+          <div class="ItemComments">
+            <div
+              data-ctv="ctv-comments"
+              mkey="{{ Post.PKEY }}"
+              totalcomments="30"
+              parentcommentid=""
+            >
+              <div data-ctv="ctv-comment"
+              author="{{ Post.LastComment }}"
+              authorthumb="https://media.cam.tv/CID00B8BA/profile/thumbnail.jpg?t=1585231169"
+              authoruriname="mariakiraly"
+              creationdatetime="2020-09-16T20:55:26">
+                <p>Sono capolavori dei maestri famosi</p>
+              </div>
+            </div>
+          </div>
+        </ctv-item-post>
+      {% endfor %}
+
+		
+		</div>
+
+
+		<div class="card-local sidebar-col">
+			<include src="common/section-local.html"></include>
+		</div>
+
+
+	</main>
+	<!-- CARDS END -->
+
+	<include src="dialogs/dialog-login.html"></include>
+	<include src="dialogs/dialog-local.html"></include>
+
+	<script type="text/javascript">
+		$( document ).ready(function() {
+  			$( ".hamburger-menu, .overlay-menu-mobile" ).on( "click", function() {
+  				$( ".hamburger-menu" ).toggleClass("open");
+  				$( "ctv-menu" ).toggleClass("open");
+  				$( ".overlay-menu-mobile" ).toggleClass("open");
+			});
+
+			$( ".BtnLocal" ).on( "click", function() {
+  				$( ".DialogLocal" ).fadeIn(300);
+			});
+
+			$( ".BtnLogin" ).on( "click", function() {
+  				$( ".DialogLogin" ).fadeIn(300);
+			});
+
+			$( ".dialog .CloseDialog" ).on( "click", function() {
+  				$( ".dialog" ).fadeOut(300);
+			});
+		});
+	</script>
+
+	<script>
+		/*let vElementsToReplace = [
+			"ctv-item-post",
+			"ctv-item-feed",
+			"ctv-comments",
+			"ctv-comment"
+		];
+		let sElementsToReplace = "";
+		vElementsToReplace.forEach((o)=>{
+			if(sElementsToReplace.trim() != "")
+				sElementsToReplace += `, `;
+			sElementsToReplace += `[data-ctv=${o}]`;
+		})
+		while($(sElementsToReplace).length > 0){
+			$(sElementsToReplace).each((i, o) => {
+				ReplaceCtvNode(o);
+			});
+		}*/
+
+		// while($("[data-ctv]").length > 0){
+		// 	$("[data-ctv]").each((i, o) => {
+		// 		ReplaceCtvNode(o);
+		// 	});
+		// }
+
+		// function ReplaceCtvNode(jEl) {
+		// 	var original = jEl;
+		// 	var replacement = document.createElement(original.getAttribute("data-ctv"));
+		// 	for(var i = 0, l = original.attributes.length; i < l; ++i){
+		// 		var nodeName  = original.attributes.item(i).nodeName;
+		// 		var nodeValue = original.attributes.item(i).nodeValue;
+		// 		replacement.setAttribute(nodeName, nodeValue);
+		// 	}
+		// 	replacement.innerHTML = original.innerHTML;
+		// 	replacement.removeAttribute("data-ctv");
+		// 	original.parentNode.replaceChild(replacement, original);
+		// }
+	</script>
+</body>
+</html>
